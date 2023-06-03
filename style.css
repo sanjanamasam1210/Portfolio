@@ -1,3 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@500;600;700&display=swap');
 body{
     margin:0;
+    display: flex;
+    flex-wrap: wrap;
+    font-family: 'Bai Jamjuree', sans-serif;
+}
+header{
+    background-color:#f2f1ef;
+    flex-basis:100%;
+    height:100px;
+    /* border-bottom: 1px black solid; */
+    width:1536px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.nav-logo{
+    flex-basis: 39%;
+    position: relative;
+    top: 35px;
+    left:120px;
+}
+.nav-menu{
+    flex-basis: 30%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.nav-menu li a{
+    flex-basis: 30%;
+    color: #161513;
+    text-decoration: none;
+    padding: 20px 17px;
+    font-weight: 550;
+    position: relative;
+    right: 6px;
+    top:3px;
+}
+.nav-menu li a:hover{
+    color: red;
+    padding-bottom:5px;
+    text-decoration: underline black;
+    text-underline-offset: 5px;
+}
+.nav-menu li{
+    float: left;
+}
+.nav-menu ul{
+    list-style-type: none;
+    margin-top: 35px;
+}
+.nav-btn a{
+    flex-basis: 30%;
+    color: #161513;
+    font-size: 15px;;
+    text-decoration: none;
+    position: relative;
+    left: 220px;
+    top:35px;
+    border: 1px black solid;
+    padding:10px 30px;
+    font-weight: 550;
+}
+.nav-btn a:hover{
+    background-color: black;
+    color:white;
+    text-decoration: underline;  
+}
+.hero-section{
+    flex-basis: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    height: 600px;
+    border-bottom: 1px black solid;
+    background-color: #f2f1ef;
+}
+.hero-left-wrapper{
+    flex-basis: 50%;
+    /* border-right: 1px black solid; */
+    position: relative;
+    animation-name: hero-left;
+    animation-duration: 0.7s;
+    animation-iteration-count:1;
+}
+@keyframes hero-left{
+    0%{
+        left:-120px;
+        top:0;}
+    100%{
+        left:0%;
+    }    
+}    
+.Hero-Description-hyderabad{
+    text-decoration: line-through;
+    display:inline;
+}
+.Hero-Description-based{
+    display: inline;
+}
+.Hero-Description{
+    color: #161513;
+    font-size: 35px;
+    line-height: 21px;
+    font-weight: 700;
+    position: relative;
+    top:120px;
+    left:52px;
+}
+.Hero-Attributes h5{
+    display: inline;
+    position: relative;
+    top: 170px;
+    left:54px;
+    color: #161513;
+    font-size: 24px;
+}
+.Hero-Button .btn1{
+    position: relative;
+    top:230px;
+    text-decoration: none;
+    color:#f2f1ef;
+    background-color:#161513;
+    left:54px;
+    padding:15px 35px;
+}
+.Hero-Button .btn2{
+    position: relative;
+    top:230px;
+    text-decoration: none;
+    color:#161513;
+    background-color:#f2f1ef;
+    border:1px #161513 solid;
+    left:49px;
+    padding:14px 30px;
+}
+.Hero-Button .btn1:hover{
+    text-decoration: underline #f2f1ef;
+}
+.Hero-Button .btn2:hover{
+    text-decoration: underline #161513;
 }
