@@ -138,3 +138,20 @@ header{
 .Hero-Button .btn2:hover{
     text-decoration: underline #161513;
 }
+.hero-right-wrapper{
+    position: relative;
+    top:200px;  
+    left:350px;
+    animation-name: hero-right;
+    animation-duration: 0.7s;
+    animation-iteration-count:1;
+}
+@keyframes hero-right{
+    0%{
+        left:500px;
+    
+    }
+    100%{
+        left:350px;
+    }
+}
