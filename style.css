@@ -1,0 +1,32 @@
+body{
+  background-color: #f2f1ef;
+  font-family: 'Bai Jamjuree', sans-serif;
+  margin: 0;
+}
+header{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+nav-logo{
+  flex-basis: 10%;
+  /* justify-content: left; */
+}
+.nav-menu{
+  flex-basis: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+ 
+}
+.nav-btn{
+  flex-basis: 10%;
+  justify-content:flex-end;;
+  display:flex;
+}
+.nav-menu li{
+  float: left;
+}
+.nav-menu ul{
+  list-style-type: none;
+}
