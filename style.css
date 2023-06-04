@@ -4,6 +4,7 @@ body{
     display: flex;
     flex-wrap: wrap;
     font-family: 'Bai Jamjuree', sans-serif;
+    background-color:#f2f1ef;
 }
 header{
     background-color:#f2f1ef;
@@ -98,18 +99,18 @@ header{
 }
 .Hero-Description{
     color: #161513;
-    font-size: 35px;
-    line-height: 21px;
+    font-size: 37px;
+    line-height: 2px;
     font-weight: 700;
     position: relative;
-    top:120px;
-    left:52px;
+    top:125px;
+    left:111px;
 }
 .Hero-Attributes h5{
     display: inline;
     position: relative;
     top: 170px;
-    left:54px;
+    left:112px;
     color: #161513;
     font-size: 24px;
 }
@@ -119,7 +120,7 @@ header{
     text-decoration: none;
     color:#f2f1ef;
     background-color:#161513;
-    left:54px;
+    left:112px;
     padding:15px 35px;
 }
 .Hero-Button .btn2{
@@ -129,7 +130,7 @@ header{
     color:#161513;
     background-color:#f2f1ef;
     border:1px #161513 solid;
-    left:49px;
+    left:107px;
     padding:14px 30px;
 }
 .Hero-Button .btn1:hover{
@@ -154,4 +155,64 @@ header{
     100%{
         left:350px;
     }
+}
+.banner-section{
+    flex-basis: 100%;
+    height:230px;
+    border-bottom: 1px black solid;
+}
+.banner-container h4,.banner-container img{
+    display: inline;
+    color: #f2f1ef;
+    background-color: #161513;
+    position: relative;
+    top:95px;
+    padding:30px 18px;
+    margin:0;
+    font-size: 18px;
+}
+.banner-container img{
+    padding:40px 5px;
+    /* padding-top: 29.99px; */
+    flex-basis: 2%;
+    position: relative;
+    width:18px;
+    height: 18px;
+
+} 
+.banner-container h4{
+    position: relative;
+    padding-top: 37px;
+    /* top:64px; */
+    /* padding-bottom: 26.5px; */
+}   
+.banner-container{
+    /* transform: rotate(357deg); */
+    display: flex;
+    flex-wrap: wrap;
+    /* animation-name: left-slide;
+    animation-duration: 2s;
+    animation-iteration-count:1; */
+}
+/* @keyframes left-slide{
+    0%{
+        left:0;
+    }
+    100%{
+        right:1000px;
+    }
+} */
+.about-section{
+    display: flex;
+    flex-wrap: wrap;
+}
+.about-left-wrapper{
+    flex-basis:50%;
+    border-right: 1px black solid;
+    display: inline;
+}
+.about-right-wrapper{
+    flex-basis:49%;
+    border-right: 1px black solid;
+    display: inline;
 }
