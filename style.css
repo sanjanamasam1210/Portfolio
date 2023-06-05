@@ -3,30 +3,66 @@ body{
   font-family: 'Bai Jamjuree', sans-serif;
   margin: 0;
 }
-header{
+
+/* Header */
+.header{
+  padding:0 7%;
+  padding-top: 1.3%;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  justify-content:space-between;
+  align-items: center;
 }
-nav-logo{
-  flex-basis: 10%;
-  /* justify-content: left; */
-}
+/* Navbar */
+
 .nav-menu{
-  flex-basis: 80%;
   display: flex;
+}
+.nav-menu a{
+  text-decoration: none;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 600;
+  color:#161513;
+}
+.nav-btn a{
+  text-decoration: none;
+  color: #161513;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 600;
+  border:1px #161513 solid;
+  padding: 8px 25px;
+}
+.nav-btn a:hover{
+  background-color: #161513;
+  color: #f2f1ef;
+}
+
+
+/* Hero Container*/
+.hero-container{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 8%;
+  height: 100vh;
+}
+
+.hero-left-wrapper{
+  display: flex;
+  flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
- 
+  width: 50vh;
+  height: 50vh;
 }
-.nav-btn{
-  flex-basis: 10%;
-  justify-content:flex-end;;
-  display:flex;
-}
-.nav-menu li{
-  float: left;
-}
-.nav-menu ul{
-  list-style-type: none;
+
+.hero-right-wrapper{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  height: 50%;
 }
