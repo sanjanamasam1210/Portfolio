@@ -196,33 +196,105 @@ body{
 .btn1:hover,.btn2:hover{
   text-decoration: underline;
 }
+
 .banner-container{
   display: flex;
   background-color: #161513;
-  margin-top: 28vh;
+  margin-top: 10vh;
   /* transform: rotate(357deg); */
   padding-top: 2vh;
   padding-bottom: 2vh;
-
+  animation-name: banner;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
 }
+/* @keyframes banner{
+  0%{
+    translate: 0;
+  }
+  100%{
+    translate:-100%;
+  }
+} */
 .banner-container h4{
   font-size: 18px;
     line-height: 32px;
     font-weight: 700;
     color: #f2f1ef;
 }
+.about{
+  display: flex;
+  justify-content: space-between;
+  padding-left: 32vh;
+  padding-right: 32vh;
+  margin-top: 15vh;
+}
+.about-left-wrapper{
+  flex-basis: 50%;
+}
+.about-right-wrapper{
+  flex-basis: 70%;
+}
+.about-left-name{
+  display: flex;
+}
+/* .about-left-name-taylor{
+  font-size: 24px;
+    line-height: 32px;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+} */
+.about-left-designation-text{
+  font-size: 56px;
+    line-height: 64px;
+    font-weight: 700;
+    letter-spacing: -0.01em;
+}
+.about-right-bold-text{
+  font-size: 32px;
+    line-height: 40px;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+}
+.about-right-small-text{
+  font-size: 18px;
+  line-height: 32px;
+  font-weight: 500;
+}
+.about-right-mention{
+  display: flex;
+  justify-content: space-between;
+}
+.about-right-mention h5{
+  color: #e94d35;
+    font-size: 12px;
+    line-height: 16px;
+    font-weight: 600;
+    margin:0;
+}
+.about-right-mention h3{
+  font-size: 24px;
+    line-height: 32px;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    margin:0;
+    margin-top:1vh;
+}
 
-
-
-
-/* About Banner */
-.about-container{
+/* Visuals */
+.Mention_Visuals{
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  padding: 0 8%;
-  height: 100%;
+  margin-top: 15vh;
+}
+
+.Mention_Visuals-experience, Mention_Visuals-projects, Mention_Visuals-clients {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10vh;
 }
 
