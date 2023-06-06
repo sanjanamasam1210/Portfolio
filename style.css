@@ -607,6 +607,12 @@ body{
 .article-btn:hover{
   text-decoration: underline;
 }
+.article-side-icon{
+  width: 35vh;
+  margin-left:93%;
+  position: relative;
+  bottom: 45vh;
+}
 
 
 /* Subscribe */
@@ -668,17 +674,11 @@ body{
 /* Footer */
 .footer{
   background-color: #131416;
-  /* display: flex; */
-  /* justify-content: space-between; */
   padding: 0 32vh;
   align-items: center;
   color: #f2f1ef;
   height:31vh;
 }
-/* .footer-grid{
-  display: flex;
-  flex-direction: column;
-} */
 .footer-upperline{
   display: flex;
   justify-content: space-between;
