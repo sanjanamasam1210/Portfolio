@@ -4,16 +4,16 @@
       width: 100%;
       padding: 10% 5%;
     }
-  
     .hero-img{
       width: 70%;
       height: auto;
     }
-  
-  
     .hero-left-wrapper{
       width: 100%;
       flex-wrap: wrap;
+    }
+    .Hero-Attributes{
+      margin-top: 0;
     }
   }
   @media only screen and (max-width:990px){
@@ -32,5 +32,23 @@
   @media only screen and (max-width:480px){
     .nav-btn{
         display: none;
+    }
+  }
+  @media only screen and (max-width:1383px){
+    .Hero-Attributes{
+      margin-top: 8vh;
+    }
+    .Hero-Button{
+      margin-top: 8vh;
+    }
+  }
+  @media only screen and (max-width:969px){
+    .Hero-Attributes h5{
+      font-size: 22px;
+    }
+  }
+  @media only screen and (max-width:895px){
+    .Hero-Attributes h5{
+      font-size: 21px;
     }
   }

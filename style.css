@@ -52,6 +52,7 @@ body{
   background-color: #161513;
   color: #f2f1ef;
   text-decoration: underline;
+  transition: 0.5s ease-in-out;
 } 
 .menu-dropdown {
   position: relative;
@@ -60,9 +61,30 @@ body{
 .menu-dropdown-btn {
   background-color: #161513;
   color:#f2f1ef;
-  width:5vh;
+  width:5.5vh;
+  height: 5.5vh;
   border: none;
   cursor: pointer;
+}
+
+.menu-dropdown-btn{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+hr{
+  width: 15px;
+  height: 2px;
+  color: none;
+  border: none;
+  background-color: #f2f1ef;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 3px;
+  padding: 0px;
 }
 
 .menu-dropdown-content{
@@ -139,7 +161,7 @@ body{
   /* padding-right:10%; */
   /* padding-top: 19vh;  */
 }
-.Hero-Description-hi,.Hero-Description-creative,.Hero-Description-based,.Hero-Description-london{
+.Hero-Description-hi,.Hero-Description-creative,.Hero-Description-based,.Hero-Description-in,.Hero-Description-london{
     font-size: 56px;
     line-height: 64px;
     font-weight: 700;
@@ -148,6 +170,7 @@ body{
 }
 .hero-group{
   display: flex;
+  flex-wrap: wrap;
 }
 .Hero-Description-london{
   text-decoration:line-through;
@@ -156,6 +179,7 @@ body{
   display: flex;
   position: relative;
   bottom:5.4vh;
+  flex-wrap: wrap;
 }
 .Hero-Attributes h5{
   font-size: 24px;
@@ -405,6 +429,7 @@ body{
 .awards-grid-1:hover,.awards-grid-2:hover,.awards-grid-3:hover,.awards-grid-4:hover{
   background-color: #161513;
   color: #f2f1ef;
+  transition: 0.3s ease-in-out;
 }
 .portfolio-header{
   text-align: center;
@@ -493,6 +518,7 @@ body{
 .service-grid-sub:hover{
   background-color: #161513;
   color: #f2f1ef;
+  transition: 0.3s ease-in-out;
 }
 
 .service-grid-sub h2{
@@ -527,6 +553,8 @@ body{
   display: block;
   margin-left: auto;
   margin-right: auto;
+  justify-content: center;
+  align-items: center;
 }
 .customer-grid{
   padding: 0 30.5vh;
@@ -538,7 +566,16 @@ body{
 .customer-grid-sub:hover{
   background-color: #131416 ;
   color: #f2f1ef;
+  transition: 0.3s ease-in-out;
 }
+
+.customer-grid-img-black:hover{
+  visibility: hidden;
+}
+/* 
+.customer-grid-img-white{
+  visibility: visible;
+} */
 
 /* Article */
 
@@ -554,6 +591,7 @@ body{
   display: flex;
   justify-content:space-around;
   padding:4.1vh;
+  /* cursor: ; */
 }
 .article-grid-left{
   display: flex;
@@ -596,7 +634,7 @@ body{
   color:#f2f1ef;
   background-color: #131416;
   display: flex;
-  margin: 5vh 33vh 0 33vh;
+  margin: 5vh 33vh 15vh 33vh;
   justify-content: center;
   padding-top: 2.2vh;
   padding-bottom: 2.2vh;
@@ -608,10 +646,10 @@ body{
   text-decoration: underline;
 }
 .article-side-icon{
-  width: 35vh;
-  margin-left:93%;
-  position: relative;
-  bottom: 45vh;
+  position: absolute;
+  width: 29vh;
+  right: -100px;
+  top:900vh;
 }
 
 
@@ -639,7 +677,7 @@ body{
   background-color: #e6e3de;
   margin-right: 2vh;
   color:#131416;
-  font-family: Arial,sans-serif;
+  font-family: 'Bai Jamjuree',sans-serif;
   width:42vh;
   height: 25px;
 }
@@ -651,6 +689,12 @@ body{
       font-weight: 500;
       opacity: 100%;
 }
+
+.subscribe-email:focus{
+  border: 2px #e94d35 solid;
+  outline: none;
+}
+
 .subscribe-email:active{
   border-color: #e94d35;
 }
@@ -707,17 +751,25 @@ body{
   line-height: 24px;
   font-weight: 500;
 }
+.footer-social{
+  display: flex;
+  justify-content: space-between;
+  flex-basis: 15%;
+}
+.footer-social div{
+  width: 5vh;
+}
 .footer-social img{
   border: 1px #c9c6c0 solid;
   border-radius: 50%;
   width:3vh;
   padding: 1vh;
-  margin-right: 2vh;
+  transition: 0.3s;
+  /* margin-right: 2vh; */
 }
 .footer-social img:hover{
   border: 1px #f2f1ef solid;
+  /* position: relative;
+  bottom: 2px; */
   padding: 1.3vh;
-}
-#insta{
-  margin-right: 0;
 }
